@@ -1,0 +1,16 @@
+Crear repo en GIT
+
+1.abrir carpeta donde vamos a trabajar.
+
+2.agregar primer comando:git init
+
+3.agregar todos los archivos: git add .
+
+4.verificacion de status, siempre que quieran ta qe solo informativo: git status
+
+5. confirmar los cambios con: git commit -m "algun mensaje"
+
+Crear ramas:
+1- saber en cual rama estoy: git branch
+
+2-crear nuevva rama: git branch nombreDeRama
