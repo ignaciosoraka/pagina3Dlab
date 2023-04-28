@@ -14,3 +14,7 @@ Crear ramas:
 1- saber en cual rama estoy: git branch
 
 2-crear nuevva rama: git branch nombreDeRama
+
+3- si quiero volver a mi version anterior: git checkout
+
+4- si quiero eliminar una rama, verificar que no estoy dentro de la rama que quiero eliminar: git branch -D "nombre de la rama"
