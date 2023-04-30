@@ -17,6 +17,13 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 10px 0;
+
+}
+
+
+.divcontainer {
+  display: flex;
 }
 
 .header {
@@ -28,8 +35,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 70vh;
-  align-items: center;
   display: flex;
+  align-items: center;
+
+  ;
 }
 
 .logo {
@@ -42,11 +51,13 @@ body {
   left: 0;
   right: 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+
+
 
 }
+
 
 .menu .navbar ul li {
   position: relative;
@@ -190,7 +201,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  
+
 }
 
 
@@ -358,6 +369,10 @@ footer {
 
 }
 
+.main-image:hover {
+  transform: scale(1.15);
+}
+
 .product-gallery {
   margin-top: 15px;
 }
@@ -458,19 +473,20 @@ footer {
 
 
 
-.section-content{
+.section-content {
   display: flex;
   align-items: center;
   flex-direction: column;
 
 }
-.section-content h2{
-  
-    color: #ffffff;
+
+.section-content h2 {
+
+  color: #ffffff;
 }
 
 input.btn-3 {
- 
+
   padding: 10px 15px;
   color: #ffffff;
   background: linear-gradient(90deg,
@@ -509,13 +525,7 @@ input.btn-3 {
 
 /*parte de nosotros*/
 
-.container {
-  padding: 100px 0;
-}
 
-.divcontainer {
-  display: flex;
-}
 
 .parte1 {
   width: 50%;

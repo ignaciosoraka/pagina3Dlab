@@ -18,3 +18,6 @@ Crear ramas:
 3- si quiero volver a mi version anterior: git checkout
 
 4- si quiero eliminar una rama, verificar que no estoy dentro de la rama que quiero eliminar: git branch -D "nombre de la rama"
+
+5- si me gustaron los cambios que hice en mi otra version de branch los fusionamos a la main: primero guardar los cambios 
+5.1- para fusionarlos: git merge nombreDeBranch
