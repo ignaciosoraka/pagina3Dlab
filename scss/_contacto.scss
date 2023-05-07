@@ -1,0 +1,37 @@
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  
+  .campo {
+    padding: 13px 10px;
+    background-color: #eeeff3;
+    color: #020202;
+    outline: none;
+    font-size: 15px;
+    margin: 0 10px 20px 0;
+    border-radius: 5px;
+  }
+  
+  .section-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .section-content h2 {
+    color: #ffffff;
+  }
+  
+  .btn-3 {
+    padding: 10px 15px;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgb(40, 38, 38) 25%, rgb(3, 3, 3) 100%);
+    border-radius: 15px;
+    display: block;
+    margin: 30px auto;
+  }
+  

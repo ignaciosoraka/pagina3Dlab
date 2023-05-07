@@ -1,0 +1,45 @@
+/*MIXINS*/
+
+
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-fila-centrado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-espacios-centrado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin background-botones {
+    background: linear-gradient(90deg,
+            #3c104b 25%,
+            rgb(193, 190, 190) 300%);
+}
+
+@mixin background-imagen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)),
+url(../fotos/impresora1.jpg);
+}
+
+@mixin background-imagen2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)),
+url(../fotos/impresora2.jpg);
+}
