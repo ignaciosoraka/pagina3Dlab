@@ -1,33 +1,23 @@
-@import 'variables';
+/*globales*/
 
+@import './base/globales';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-@import 'globales';
+/*utilities*/
+@import './utilities/mixins';
+@import './utilities/variables';
 
-/*Toda la pagina inicio*/
+/*componentes*/
+@import './components/equipo';
+@import './components/lomasnuevo';
+@import './components/nosotros';
+@import './components/productos';
+/*layout*/
 
-@import './inicio/header';
-
-@import './inicio/lomasnuevo';
-
-@import './inicio/equipo';
-
-
-/*Parte de productos*/
-
-@import 'productos';
-/*parte de como comprar*/
-
-@import 'comocomprar';
-
-/*parte de nosotros*/
-
-@import 'nosotros';
+@import './layout/header';
+@import'./layout/footer';;
+@import './layout/comocomprar';
 
 /*parte de contacto*/
 
-@import './contacto/comocomprar';
-
-/*footer final*/
-
-@import'footer.scss';
+@import './views/contacto'

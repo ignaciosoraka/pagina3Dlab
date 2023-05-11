@@ -59,14 +59,18 @@
             display: none;
         }
 
+        .menu label {
+
+            display: none;
+            
+        }
         .menu-icono {
             width: 25px;
+            cursor: pointer;
+            
         }
 
-        label {
-            cursor: pointer;
-            display: none;
-        }
+       
     }
 
     .header-content.container {
@@ -114,4 +118,55 @@
     &:hover {
         @include background-botones;
     }
+}
+
+@media (max-width: $mediaTablet-991) {
+
+    .menu {
+        padding: 20px
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
+        display: initial;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: none;
+    }
+
+    .header {
+        min-height: 0vh;
+
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 100px 30px 30px 30px;
+
+    }
+
+    .header-txt {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .header-txt h1 {
+        margin-bottom: 15px;
+    }
+
 }

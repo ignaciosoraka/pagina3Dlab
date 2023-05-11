@@ -1,4 +1,5 @@
-/*MIXINS*/
+@charset "UTF-8";
+/*globales*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 * {
   margin: 0;
@@ -13,105 +14,74 @@ body {
   background-color: #2d2c32;
 }
 
-/*Toda la pagina inicio*/
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px 0;
+/*utilities*/
+/*MIXINS*/ /*Media querys*/
+/*componentes*/
+.about {
+  padding: 100px 0;
 }
-
-.divcontainer {
+.about .about-content {
   display: flex;
 }
-
-.header {
-  background: linear-gradient(180deg, rgba(43, 42, 48, 0.5) 0%, rgb(45, 44, 50) 100%), url(../fotos/baner.jpg);
-  background-position: center;
+.about .about-content .about-1 {
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../fotos/impresora1.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 70vh;
+  padding: 25px;
   display: flex;
-  align-items: center;
+  align-items: end;
+  height: 500px;
+  border-radius: 10px;
 }
-.header .logo {
-  height: 70px;
-}
-.header .menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .menu .navbar ul li {
-  position: relative;
-  float: left;
-}
-.header .menu .navbar ul li a {
-  font-size: 18px;
-  padding: 20px;
-  color: #a0a3c4;
-  display: block;
-  font-weight: 600;
-  text-decoration: none;
-}
-.header .menu .navbar ul li a:hover {
-  color: #ffffff;
-}
-.header .menu #menu {
-  display: none;
-}
-.header .menu .menu-icono {
-  width: 25px;
-}
-.header .menu label {
-  cursor: pointer;
-  display: none;
-}
-.header .header-content.container {
-  display: flex;
-  justify-content: left;
-}
-.header .header-content {
-  display: flex;
-  align-items: center;
-}
-.header .header-txt {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.header .header-txt span {
+.about .about-content .about-1 h3 {
   font-size: 14px;
-  color: #5b5bd7;
-  text-transform: capitalize;
-  white-space: nowrap;
-}
-.header .header-txt h1 {
-  font-size: 50px;
-  line-height: 70px;
   color: #ffffff;
-  margin-bottom: 10px;
-  white-space: nowrap;
+  margin-left: 20px;
+}
+.about .about-content .about-2 {
+  width: 50%;
+  margin-left: 10px;
+}
+.about .about-content .about-2 .about-in1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../fotos/impresora2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px;
+  display: flex;
+  align-items: end;
+  height: 500px;
+  border-radius: 10px;
+}
+.about .about-content .about-2 .about-in1 h3 {
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 15px;
 }
 
-.btn-1 {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  padding: 10px 15px;
-  color: #ffffff;
-  background: linear-gradient(90deg, rgb(40, 38, 38) 25%, rgb(3, 3, 3) 100%);
-  border-radius: 15px;
-}
-.btn-1:hover {
-  background: linear-gradient(90deg, #3c104b 25%, rgb(193, 190, 190) 300%);
+hr {
+  margin: 2px;
+  border: 1px solid #5b5bd7;
 }
 
+@media (max-width: 991px) {
+  .btn-2 {
+    width: 110px;
+  }
+  .about {
+    padding: 30px;
+  }
+  .about-1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .about-2 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 .txt {
   display: flex;
   align-items: center;
@@ -170,56 +140,152 @@ body {
   background: linear-gradient(90deg, #3c104b 25%, rgb(193, 190, 190) 300%);
 }
 
-.about {
-  padding: 100px 0;
+@media (max-width: 1180px) {
+  .produc {
+    padding: 30px;
+  }
+  .produc-content {
+    display: flex;
+    /* Utilizamos flexbox para alinear los elementos */
+    flex-wrap: wrap;
+    /* Permitimos que los elementos se envuelvan a medida que se reduzca el ancho de la pantalla */
+    justify-content: center;
+    /* Centramos horizontalmente los elementos */
+    align-items: center;
+    /* Centramos verticalmente los elementos */
+  }
+  .foto {
+    width: 45%;
+    /* Definimos el ancho de cada imagen */
+    margin: 10px;
+    /* Añadimos un margen a cada imagen */
+  }
+  .foto {
+    width: 45%;
+    /* Definimos el ancho de cada imagen */
+    margin: 10px;
+    /* Añadimos un margen a cada imagen */
+    text-align: center;
+    /* Centramos horizontalmente el contenido dentro de cada foto */
+  }
+  .foto img {
+    display: inline-block;
+    /* Evitamos el espacio extra debajo de las imágenes */
+    max-width: 100%;
+    /* Aseguramos que las imágenes no sean más anchas que su contenedor */
+  }
+  .follo {
+    display: flex;
+    /* Utilizamos flexbox para alinear los elementos */
+    justify-content: center;
+    /* Centramos horizontalmente los elementos */
+    align-items: center;
+    /* Centramos verticalmente los elementos */
+    margin-top: 10px;
+    /* Añadimos un margen superior al contenedor de precios */
+  }
+  .about {
+    padding: 30px;
+  }
 }
-.about .about-content {
-  display: flex;
-}
-.about .about-content .about-1 {
+.parte1 {
   width: 50%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../fotos/impresora1.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 25px;
+  color: #eeeff3;
   display: flex;
-  align-items: end;
-  height: 500px;
-  border-radius: 10px;
-}
-.about .about-content .about-1 h3 {
-  font-size: 14px;
-  color: #ffffff;
-  margin-left: 20px;
-}
-.about .about-content .about-2 {
-  width: 50%;
-  margin-left: 10px;
-}
-.about .about-content .about-2 .about-in1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../fotos/impresora2.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 25px;
-  display: flex;
-  align-items: end;
-  height: 500px;
-  border-radius: 10px;
-}
-.about .about-content .about-2 .about-in1 h3 {
-  font-size: 14px;
-  color: #ffffff;
-  margin-left: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-hr {
-  margin: 2px;
-  border: 1px solid #5b5bd7;
+h4 {
+  padding-left: 25px;
+  color: #ddd;
 }
 
-/*Parte de productos*/
+p {
+  color: #ddd;
+  font-size: 16px;
+  padding-left: 30px;
+}
+
+.sabermas {
+  padding-left: 30px;
+}
+
+.parte2 {
+  width: 50%;
+  color: #eeeff3;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.imagendeparte2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.imagendeparte2 img {
+  width: 170px;
+  margin-bottom: 10px;
+  border-radius: 10%;
+}
+
+.texto {
+  padding-left: 25px;
+}
+
+.mapa {
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.mapa iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+}
+
+@media only screen and (max-width: 9740px) {
+  .parte1 {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h4 {
+    padding-left: 10px;
+  }
+  p {
+    padding-left: 10px;
+  }
+  .parte2 {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .imagendeparte2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .imagendeparte2 img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+  }
+  .texto {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mapa {
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+}
 .product {
   max-width: 1100px;
   width: 100%;
@@ -293,28 +359,161 @@ hr {
   align-items: end;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 20px;
-  padding: 20px;
+@media (max-width: 991px) {
+  .product-container {
+    justify-content: space-between;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .thumbnail-container {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  .main-image {
+    margin-right: 10px;
+  }
+  .boton-compra {
+    width: 110px;
+  }
 }
-.grid-container .header {
-  grid-column: 1/-1;
-  text-align: center;
-}
-.grid-container .texto {
-  color: #dbd7d7;
-}
-.grid-container .step {
-  border: 1px solid #ccc;
-  padding: 20px;
-}
-.grid-container .step h3 {
-  margin-top: 0;
+/*layout*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0;
 }
 
+.divcontainer {
+  display: flex;
+}
+
+.header {
+  background: linear-gradient(180deg, rgba(43, 42, 48, 0.5) 0%, rgb(45, 44, 50) 100%), url(../fotos/baner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  height: 70px;
+}
+.header .menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+.header .menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #a0a3c4;
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+}
+.header .menu .navbar ul li a:hover {
+  color: #ffffff;
+}
+.header .menu #menu {
+  display: none;
+}
+.header .menu .menu label {
+  display: none;
+}
+.header .menu .menu-icono {
+  width: 25px;
+  cursor: pointer;
+}
+.header .header-content.container {
+  display: flex;
+  justify-content: left;
+}
+.header .header-content {
+  display: flex;
+  align-items: center;
+}
+.header .header-txt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-txt span {
+  font-size: 14px;
+  color: #5b5bd7;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.header .header-txt h1 {
+  font-size: 50px;
+  line-height: 70px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.btn-1 {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #ffffff;
+  background: linear-gradient(90deg, rgb(40, 38, 38) 25%, rgb(3, 3, 3) 100%);
+  border-radius: 15px;
+}
+.btn-1:hover {
+  background: linear-gradient(90deg, #3c104b 25%, rgb(193, 190, 190) 300%);
+}
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 20px;
+  }
+  .menu label {
+    display: initial;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1f1f1f;
+    display: initial;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+  }
+  #menu:checked ~ .navbar {
+    display: none;
+  }
+  .header {
+    min-height: 0vh;
+  }
+  .header-content {
+    flex-direction: column;
+    padding: 100px 30px 30px 30px;
+  }
+  .header-txt {
+    width: 100%;
+    text-align: center;
+  }
+  .header-txt h1 {
+    margin-bottom: 15px;
+  }
+}
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -366,6 +565,66 @@ footer .final {
   flex-direction: column;
   align-items: center;
   color: #ffffff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  padding: 20px;
+}
+.grid-container .header {
+  grid-column: 1/-1;
+  text-align: center;
+}
+.grid-container .texto {
+  color: #dbd7d7;
+}
+.grid-container .step {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.grid-container .step h3 {
+  margin-top: 0;
+}
+
+/*parte de contacto*/
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.campo {
+  padding: 13px 10px;
+  background-color: #eeeff3;
+  color: #020202;
+  outline: none;
+  font-size: 15px;
+  margin: 0 10px 20px 0;
+  border-radius: 5px;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-content h2 {
+  color: #ffffff;
+}
+
+.btn-3 {
+  padding: 10px 15px;
+  color: #ffffff;
+  background: linear-gradient(90deg, rgb(40, 38, 38) 25%, rgb(3, 3, 3) 100%);
+  border-radius: 15px;
+  display: block;
+  margin: 30px auto;
 }
 
 /*# sourceMappingURL=main.css.map */

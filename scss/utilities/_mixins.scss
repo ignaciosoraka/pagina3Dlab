@@ -20,7 +20,8 @@
     align-items: center;
     justify-content: center;
 }
-@mixin flex-espacios-centrado{
+
+@mixin flex-espacios-centrado {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,12 +35,12 @@
 
 @mixin background-imagen {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2)),
-url(../fotos/impresora1.jpg);
+            rgba(0, 0, 0, 0.2)),
+        url(../fotos/impresora1.jpg);
 }
 
 @mixin background-imagen2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2)),
-url(../fotos/impresora2.jpg);
+            rgba(0, 0, 0, 0.2)),
+        url(../fotos/impresora2.jpg);
 }
