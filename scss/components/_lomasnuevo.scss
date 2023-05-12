@@ -41,6 +41,14 @@
   }
 }
 
+.imagen-transicion {
+  transition: transform 0.3s ease;
+}
+
+.imagen-transicion:hover {
+  transform: scale(1.1);
+}
+
 .btn-2 {
   display: block;
   padding: 10px 20px;
@@ -112,4 +120,3 @@
     padding: 30px;
   }
 }
-
