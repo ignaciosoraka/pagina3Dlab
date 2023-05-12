@@ -66,7 +66,7 @@ hr {
   border: 1px solid #5b5bd7;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .btn-2 {
     width: 110px;
   }
@@ -359,7 +359,7 @@ p {
   align-items: end;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .product-container {
     justify-content: space-between;
   }
@@ -399,10 +399,12 @@ p {
   display: flex;
   align-items: center;
 }
-.header .logo {
+
+.logo {
   height: 70px;
 }
-.header .menu {
+
+.menu {
   position: absolute;
   top: 0;
   left: 0;
@@ -411,11 +413,13 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-.header .menu .navbar ul li {
+
+.menu .navbar ul li {
   position: relative;
   float: left;
 }
-.header .menu .navbar ul li a {
+
+.menu .navbar ul li a {
   font-size: 18px;
   padding: 20px;
   color: #a0a3c4;
@@ -423,41 +427,48 @@ p {
   font-weight: 600;
   text-decoration: none;
 }
-.header .menu .navbar ul li a:hover {
+
+.menu .navbar ul li a:hover {
   color: #ffffff;
 }
-.header .menu #menu {
+
+#menu {
   display: none;
 }
-.header .menu .menu label {
-  display: none;
-}
-.header .menu .menu-icono {
+
+.menu-icono {
   width: 25px;
-  cursor: pointer;
 }
-.header .header-content.container {
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content.container {
   display: flex;
   justify-content: left;
 }
-.header .header-content {
+
+.header-content {
   display: flex;
   align-items: center;
 }
-.header .header-txt {
+
+.header-txt {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.header .header-txt span {
+.header-txt span {
   font-size: 14px;
   color: #5b5bd7;
   text-transform: capitalize;
   white-space: nowrap;
 }
-.header .header-txt h1 {
+.header-txt h1 {
   font-size: 50px;
   line-height: 70px;
   color: #ffffff;
@@ -478,7 +489,7 @@ p {
   background: linear-gradient(90deg, #3c104b 25%, rgb(193, 190, 190) 300%);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .menu {
     padding: 20px;
   }
@@ -487,17 +498,21 @@ p {
   }
   .menu .navbar {
     position: absolute;
-    top: 100%;
+    top: 85%;
     left: 0;
     right: 0;
     background-color: #1f1f1f;
-    display: initial;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    display: none;
   }
   .menu .navbar ul li {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   #menu:checked ~ .navbar {
-    display: none;
+    display: initial;
   }
   .header {
     min-height: 0vh;
