@@ -1,6 +1,7 @@
 .parte1 {
-    width: 50%;
+    width: 100%;
     color: #eeeff3;
+    padding-bottom: 40px;
 
     @include flex-columna;
 }
@@ -17,90 +18,84 @@ p {
 }
 
 .sabermas {
-    padding-left: 30px;
+    display: block;
+    padding: 10px 20px;
+    background-color: #101011;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    text-decoration: none;
+
+    &:hover {
+        @include background-botones;
+    }
+}
+
+.equipo {
+    color: #eeeff3;
+    text-align: center;
+    padding-bottom: 30px;
+
 }
 
 .parte2 {
-    width: 50%;
+    width: 100%;
 
     color: #eeeff3;
 
     display: flex;
     align-items: center;
-    justify-content: start;
-    flex-direction: column;
+    justify-content:center;
+    flex-direction: row;
 }
 
 .imagendeparte2 {
     display: flex;
     align-items: center;
-    margin-bottom: 70px;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .imagendeparte2 img {
-    width: 170px;
+    width: 80%;
+    max-width: 300px;
     margin-bottom: 10px;
     border-radius: 10%;
 }
 
+
 .texto {
-    padding-left: 25px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mapa {
-    padding-left: 30px;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+
 }
 
 .mapa iframe {
     width: 100%;
     max-width: 600px;
     height: 450px;
+    border-radius: 5px;
 }
 
 
-@media only screen and (max-width: $mediaDesktop-9740) {
-    .parte1 {
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
 
-    h4 {
-        padding-left: 10px;
-    }
 
-    p {
-        padding-left: 10px;
-    }
+@media (max-width:578px) {
 
     .parte2 {
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .imagendeparte2 {
         display: flex;
         align-items: center;
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-
-    .imagendeparte2 img {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 10px;
-        border-radius: 10%;
-    }
-
-    .texto {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .mapa {
-        padding-left: 10px;
-        margin-top: 20px;
+        justify-content: start;
+        flex-direction:column;
     }
 }

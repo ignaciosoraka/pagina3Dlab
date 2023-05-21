@@ -28,6 +28,7 @@ Pasos para combinar sass con css:
 2. npm install -g sass
 
 3. sass --watch scss:css
+
 4. para que deje de combinarse apretar Crtl-c
 
 Pasos 1 y 2 solo para primera vez. Para retomar una vez cerrado solo el paso 3.

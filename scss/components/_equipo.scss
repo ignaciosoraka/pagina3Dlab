@@ -56,12 +56,14 @@ hr {
 
 
 @media (max-width: $mediaTablet-768) {
+
   .btn-2 {
     width: 110px;
   }
 
   .about {
     padding: 30px;
+
   }
 
   
@@ -69,10 +71,26 @@ hr {
   .about-1 {
     width: 100%;
     margin-bottom: 10px;
+
   }
 
   .about-2 {
     width: 100%;
     margin-left: 0;
   }
+}
+
+
+
+@media (max-width:555px){
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+
+
+  }
+
 }
