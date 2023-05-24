@@ -42,8 +42,9 @@
 .menu .navbar ul li {
     position: relative;
     float: left;
+   
 }
- 
+
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
@@ -145,7 +146,7 @@
         background-color: #1f1f1f;
         box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
         display: none;
-       
+        z-index: 999;
 
     }
 
